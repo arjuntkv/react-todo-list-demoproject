@@ -48,7 +48,7 @@ class App extends Component {
 
 // for handling the todo delete(todolist.js and todoitem.js)
   handledelete=(id)=>{
-    const filtereditems = this.state.items.filter(item=>item.id!=id);
+    const filtereditems = this.state.items.filter(item=>item.id!==id);
     this.setState({
       items:filtereditems
     })

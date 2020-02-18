@@ -8,17 +8,17 @@ export default class todoinput extends Component {
         return (
             <div className="card card-body my-3">
                 <form onSubmit={handlesubmit}>
-                    <div className="input-group">
+                    <div className="form-group">
 
-                        {/* for icon */}
+                        {/* for icon
                         <div className="input-group-prepend">
                         <div className="input-group-text bg-primary text-white">
                         <i className="fas fa-book"></i>
                         </div>
-                        </div>
+                        </div> */}
 
                         {/* for input */}
-                        <div>
+                        <div className="input-group-append">
                             <input type="text" className="form-control text-capitalize"
                             placeholder="Enter your todo here" value={item} onChange={handlechange}/>
                         </div>
